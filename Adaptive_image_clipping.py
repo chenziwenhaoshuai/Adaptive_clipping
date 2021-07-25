@@ -103,7 +103,7 @@ def iou(x1,x2,x3,x4,y1,y2,y3,y4):
 if __name__ == '__main__':
 
      for line in imgList:
-         if n <8757:
+         if n <8757:#for test
             img = cv2.imread(img_path+line)
             #cv2.imshow("o",img)
             #img = np.zeros((3000,4000,3),dtype=np.uint8)
@@ -118,51 +118,3 @@ if __name__ == '__main__':
                     #print(labels)
             except:
                 print("label {} not find".format(img_name))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #s.add(img.shape[0])
-#         if img.shape[0] == 1080:
-#             n1080+=1
-#             cv2.imwrite(save_path+line,img)
-#         if img.shape[0] == 2160:
-#             n2160+=1
-#             cv2.imwrite(save_path + line, img)
-#         if img.shape[0] == 480:
-#             n480+=1
-#         if img.shape[0] == 576:
-#             n576+=1
-#         if img.shape[0] == 1440:
-#             n1440+=1
-#             cv2.imwrite(save_path + line, img)
-#         if img.shape[0] == 1536:
-#             n1536+=1
-#             cv2.imwrite(save_path + line, img)
-#         if img.shape[0] == 405:
-#             n405+=1
-#         #print(img.shape)
-#         n+=1
-#         print(n)
-# print("n1080 = {} n2160 = {} n480 = {} n576 = {} n1440 = {} n1536 = {} n405 = {}".format(n1080,n2160,n480,n576,n1440,n1536,n405))
-# #n1080 = 604 n2160 = 3558 n480 = 44 n576 = 38 n1440 = 18 n1536 = 9 n405 = 3329
-# #n1080 = 596 n2160 = 2831 n480 = 44 n576 = 38 n1440 = 14 n1536 = 6 n405 = 5228
-#
